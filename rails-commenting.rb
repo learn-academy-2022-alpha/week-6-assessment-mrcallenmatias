@@ -6,7 +6,7 @@
 
 # FILE: app/controller/blog_posts_controller.rb
 
-# ---1) This class holds restfull routes that can create, read, update and destroy a database. It is created by typhing rails g controller inside the terminal
+# ---1) This class holds restfull routes that can create, read, update and destroy a database. It is created by typhing rails g controller inside the terminal. It also coordinated interaction between user, the views folder, and the model.
 class BlogPostsController < ApplicationController
   
   def index

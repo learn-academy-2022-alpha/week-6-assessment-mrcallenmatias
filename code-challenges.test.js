@@ -22,11 +22,9 @@ describe("sentenceNameCapitalize", function() {
       { name: "arthur dent", occupation: "a radio employee" }
     ]
     // Expected output: ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
-
     expect(sentenceNameCapitalize(people)).toEqual(["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."])
   })
 })
-
 // b) Create the function that makes the test pass.
 
 // make a function that takes in an object
@@ -49,9 +47,7 @@ function sentenceNameCapitalize(array){
   return array.map((value, key) => {
     return `${completedArr[key]} is ${value.occupation}.`
   })
-
 }
-
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
 
@@ -116,3 +112,15 @@ function cubeArray(array) {
   })
   return sum
 }
+
+// Test Suites Results
+//  PASS  ./code-challenges.test.js
+//   sentenceNameCapitalize
+//     ✓ takes in an array of objects and returns an array with a sentence about each person with their name capitalized (1 ms)
+//   remainderArray
+//     ✓ takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3
+//   cubeArray
+//     ✓ takes in an array of numbers and returns the sum of all the numbers cubed. (1 ms)
+
+// Test Suites: 1 passed, 1 total
+// Tests:       3 passed, 3 total

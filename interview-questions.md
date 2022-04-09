@@ -8,7 +8,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. As a developer, I am creating a Rails application with a model called Cohort that has_many students, but OOPS! I forgot to add the foreign key. How can I fix this mistake? What is the name of the foreign key? Would the foreign key be on the Cohort model or the Student model?
 
-Your answer: I would first need to create a migration folder and would name it related to the foreign key name. In the terminal, I would type rails generate migration (folder name). That would create a folder in the migration folder. Inside the folder, I would need to add column to create the foreign key. The name of the foreign key is student_id. This name is based on the name of the foreign table that I already have. The foreign key should be included in the student model since it is created together with the student table data.
+Your answer: I would first need to create a migration folder and would name it related to the foreign key name. In the terminal, I would type rails generate migration (folder name). That would create a folder in the migration folder. Inside the folder, I would need to add column to create the foreign key. The name of the foreign key is cohort_id. This name is based on the name of the model table that I already created. The foreign key should be included in the student table since it is created together with the student table data.
 
 Researched answer: Create a migration file. Inside the file, add a column with the name of the foreign key to create the foriegn key. Then do rails db:migrate on a terminal to apply changes to the database of the student table. The name of the foreign key is cohort_id and will be inside the student model.
 
@@ -49,12 +49,13 @@ This will use the DESTROY method inside the controller and will delete table dat
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. Read more about [user stories](https://www.atlassian.com/agile/project-management/user-stories).
 
-=> As a developer I can connect my files into my github account.
-=> As a developer I can run my files with ruby on rails
-=> As a developer I can use posgreSql together with my ruby on rails
-=> As a developer I can create a controller for my database.
-=> As a developer I can create an List model in the database. The following information are assignments, date started, deadline.
-=> As a developer I can see all the lists in the database.
-=> As a developer I can update a list in the database.
-=> As a developer I can destroy a list in the database.
-=> As a developer I can create a new list in the database.
+=> As a user, I can see all my to do list on the home page
+=> As a user, I can create a to do list by clicking create a to do list
+=> As a user, I can see a form after clicking create
+=> As a user, I can submit my to do list and show it at home page
+=> As a user, I can update my to do list by clicking update on the home page
+=> As a user, I can see a form to edit my to do list
+=> As a user, I can update my selected to do list to a new list.
+=> As a user, I can see the update to do list in my home page
+=> As a user, I can delete my to do list
+=> As a user, I will be redirected to home page after creating, deleting and updating my to do list
